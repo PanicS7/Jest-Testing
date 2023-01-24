@@ -1,5 +1,6 @@
 function caesarCipher(str, shiftFactor) {
   /**
+   * Function to encrypt string in caesar Cipher by some shift number
    * @param  {String} str         String to be shifted
    * @param  {Number} shiftFactor Shift factor
    * @return {String}             Shifted string

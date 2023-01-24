@@ -1,4 +1,10 @@
 const calculator = {
+  /**
+   * Simple calculator what can add, subtract, divide, multiply
+   * @param {Number} num1 First number
+   * @param {Number} num2 Second number
+   * @returns             Result of operation
+   */
   add: (num1, num2) => {
     if (testValue(num1, num2)) {
       return Number(num1) + Number(num2);

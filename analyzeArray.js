@@ -11,17 +11,22 @@ function analyzeArray (arr) {
         max: Math.max(...arr),
         length: arr.length
       }
-    } 
-  } 
-
-  throw new Error("Function expect array as parameter!");
+    } else {
+      throwError();
+    }
+  } else {
+    throwError();
+  }
 
 }
-
 function onlyNumbers(arr) {
   return arr.every(num => {
-    return !isNaN(num);
+    return Number(num);
   });
+}
+
+function throwError() {
+  throw new Error("Function expect array as parameter!");
 }
 
 export default analyzeArray;

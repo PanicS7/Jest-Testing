@@ -18,6 +18,10 @@ test('analyzeArray - length', () => {
 test('analyzeArray - wrong parameter', () => {
   expect(() => analyzeArray(12)).toThrowError("Function expect array as parameter!");
 });
+test('analyzeArray - array but with wrong data', () => {
+  expect(() => analyzeArray([true,8,"3",[],"2",6])).toThrowError("Function expect array as parameter!");
+});
 test('analyzeArray - array with numbers as string type', () => {
   expect(analyzeArray(["1",8,"3",4,"2",6]).average).toBe(4);
 });
+
